@@ -57,7 +57,7 @@ function renderProducts() {
 
   <a 
     class="whats-btn"
-    href="https://wa.me/5511999999999?text=Tenho interesse no produto: ${encodeURIComponent(p.title)}"
+    href="https://wa.me/5511913274243?text=Tenho interesse no produto: ${encodeURIComponent(p.title)}"
     target="_blank"
   >
     Mandar no WhatsApp
@@ -145,4 +145,5 @@ function deleteProduct(id) {
   saveProducts(products);
   renderProducts();
   detailModal.classList.add("hidden");
+
 }
