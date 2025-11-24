@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S&M PRODUTOS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-content">
+      <h1 class="logo">S&M PRODUTOS</h1>
+
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Buscar produtos..." />
+      </div>
+
+      <div class="admin-buttons">
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn" class="hidden">Sair</button>
+        <button id="addProductBtn" class="hidden">Novo Produto</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CATEGORIAS -->
+  <section id="categories" class="categories"></section>
+
+  <!-- CARROSSEIS DINÂMICOS -->
+  <section id="carrosselArea" class="carrossel-area"></section>
+
+  <!-- LISTA DE PRODUTOS (modo fallback para mobile) -->
+  <h2 class="center-title">Todos os Produtos</h2>
+  <section id="productList" class="product-grid"></section>
+
+  <!-- MODAL ADD / EDIT -->
+  <div id="productModal" class="modal hidden">
+    <div class="modal-content">
+
+      <h2 id="modalTitle">Novo Produto</h2>
+
+      <label>Título:</label>
+      <input type="text" id="pTitle">
+
+      <label>Preço:</label>
+      <input type="number" id="pPrice">
+
+      <label>Categoria:</label>
+      <input type="text" id="pCategory">
+
+      <label>Descrição:</label>
+      <textarea id="pDesc"></textarea>
+
+      <label>Imagens:</label>
+      <input type="file" id="pImages" accept="image/*" multiple>
+
+      <div id="previewArea" class="preview-area"></div>
+
+      <button id="saveProductBtn">Salvar</button>
+      <button id="closeModalBtn">Cancelar</button>
+    </div>
+  </div>
+
+  <!-- MODAL DETALHES -->
+  <div id="detailModal" class="modal hidden">
+    <div class="modal-content" id="detailContent"></div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+
+    <div class="footer-column">
+      <h3>Venda de Produtos</h3>
+      <p>As melhores Ofertas!</p>
+    </div>
+
+    <div class="footer-column">
+      <h4>Navegação</h4>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h4>Contato</h4>
+      <p>Email: passandotempocomdeus@gmail.com</p>
+      <p>WhatsApp: (11) 91327-4243</p>
+       <p>WhatsApp: (11) 96310-2837</p>
+       <p>WhatsApp: (11) 98903-8583</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 S&M PRODUTOS — Todos os direitos reservados.
+  </div>
+</footer>
+</body>
+</html>
